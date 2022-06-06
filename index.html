@@ -24,7 +24,9 @@
 	</head>
 	<body>
 		<!-- Navbar Section Design Start -->
-		<nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+		<nav
+			class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top shadow-lg"
+		>
 			<div class="container">
 				<a href="#" class="navbar-brand">Frontend Bootcamp</a>
 				<button
@@ -53,9 +55,7 @@
 		<!-- Navbar Section Design End -->
 
 		<!-- Showcase Section Design Start  -->
-		<section
-			class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
-		>
+		<section class="bg-dark text-light p-5 p-lg-0 text-center text-sm-start">
 			<div
 				class="container d-sm-flex justify-content-between align-items-center"
 			>
@@ -66,7 +66,13 @@
 						quisquam perferendis laudantium consequatur facere quod suscipit
 						voluptate soluta.
 					</p>
-					<button class="btn btn-primary btn-lg">Start the Enrollment</button>
+					<button
+						class="btn btn-primary btn-lg"
+						data-bs-toggle="modal"
+						data-bs-target="#enroll"
+					>
+						Start the Enrollment
+					</button>
 				</div>
 				<img
 					src="./img/showcase.svg"
@@ -220,8 +226,295 @@
 		<!-- Learn Section Design End -->
 
 		<!-- FAQ Section Design Start -->
-		<section id="questions" class="p-5"></section>
+		<section id="questions" class="p-5">
+			<div class="container py-5">
+				<h2 class="text-center mb-5">Frequently Asked Questions</h2>
+				<div class="accordion accordion-flush sm:w-75 m-auto" id="questions">
+					<!-- Item 1 -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingOne">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseOne"
+								aria-expanded="false"
+								aria-controls="flush-collapseOne"
+							>
+								Where exactly are you located?
+							</button>
+						</h2>
+						<div
+							id="flush-collapseOne"
+							class="accordion-collapse collapse"
+							aria-labelledby="flush-headingOne"
+							data-bs-parent="#questions"
+						>
+							<div class="accordion-body">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+								ullam dolore reiciendis ipsa nulla necessitatibus numquam
+								molestiae magnam hic. Temporibus dignissimos enim, magnam nisi
+								quod laborum voluptatum molestias optio sint laboriosam fuga
+								deserunt esse nihil ullam, minima itaque totam, dolores non est?
+								Quisquam sed dolor, voluptate repudiandae aspernatur optio.
+								Quaerat?
+							</div>
+						</div>
+					</div>
+					<!-- Item 2 -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingTwo">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseTwo"
+								aria-expanded="false"
+								aria-controls="flush-collapseTwo"
+							>
+								What services are you provided?
+							</button>
+						</h2>
+						<div
+							id="flush-collapseTwo"
+							class="accordion-collapse collapse"
+							aria-labelledby="flush-headingTwo"
+							data-bs-parent="#questions"
+						>
+							<div class="accordion-body">
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+								Voluptatibus, temporibus. Dicta officia distinctio sunt esse
+								aperiam ipsa quas, fugiat, inventore est aliquid possimus
+								molestias veritatis! Id quo aperiam molestiae quisquam,
+								veritatis quia eaque minus dolore tenetur nobis blanditiis?
+								Tempore inventore excepturi minus! A accusamus quo ipsum sequi,
+								perferendis at quas!
+							</div>
+						</div>
+					</div>
+					<!-- Item 3 -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingThree">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseThree"
+								aria-expanded="false"
+								aria-controls="flush-collapseThree"
+							>
+								Do you provide 24/7 support?
+							</button>
+						</h2>
+						<div
+							id="flush-collapseThree"
+							class="accordion-collapse collapse"
+							aria-labelledby="flush-headingThree"
+							data-bs-parent="#questions"
+						>
+							<div class="accordion-body">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Reiciendis quisquam consequatur dignissimos atque. Amet ipsa,
+								veniam, consequuntur soluta quam illum, expedita perferendis
+								laboriosam doloremque aperiam fuga. Commodi nisi odit maiores
+								quam quos eveniet, quis voluptatum excepturi alias voluptate
+								doloremque eligendi optio. Voluptatum voluptatibus veritatis
+								nihil beatae illum harum, iure repellendus?
+							</div>
+						</div>
+					</div>
+					<!-- Item 4 -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingThree">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseFour"
+								aria-expanded="false"
+								aria-controls="flush-collapseFour"
+							>
+								How do i sign up?
+							</button>
+						</h2>
+						<div
+							id="flush-collapseFour"
+							class="accordion-collapse collapse"
+							aria-labelledby="flush-headingFour"
+							data-bs-parent="#questions"
+						>
+							<div class="accordion-body">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Reiciendis quisquam consequatur dignissimos atque. Amet ipsa,
+								veniam, consequuntur soluta quam illum, expedita perferendis
+								laboriosam doloremque aperiam fuga. Commodi nisi odit maiores
+								quam quos eveniet, quis voluptatum excepturi alias voluptate
+								doloremque eligendi optio. Voluptatum voluptatibus veritatis
+								nihil beatae illum harum, iure repellendus?
+							</div>
+						</div>
+					</div>
+					<!-- Item 3 -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingThree">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseFive"
+								aria-expanded="false"
+								aria-controls="flush-collapseFive"
+							>
+								Would you help me to find a job?
+							</button>
+						</h2>
+						<div
+							id="flush-collapseFive"
+							class="accordion-collapse collapse"
+							aria-labelledby="flush-headingThree"
+							data-bs-parent="#questions"
+						>
+							<div class="accordion-body">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Reiciendis quisquam consequatur dignissimos atque. Amet ipsa,
+								veniam, consequuntur soluta quam illum, expedita perferendis
+								laboriosam doloremque aperiam fuga. Commodi nisi odit maiores
+								quam quos eveniet, quis voluptatum excepturi alias voluptate
+								doloremque eligendi optio. Voluptatum voluptatibus veritatis
+								nihil beatae illum harum, iure repellendus?
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<!-- FAQ Section Design End -->
+
+		<!-- Instructors Section Design Start -->
+		<section id="instructors" class="p-5 bg-primary">
+			<div class="container">
+				<h2 class="text-center text-white">Our Instructors</h2>
+				<p class="lead text-center text-white mb-5">
+					Our Instructors all have 5+ years of working experience as a web
+					developer in this industry.
+				</p>
+				<div class="row g-4">
+					<div class="col-md-6 col-lg-4">
+						<div class="card bg-light">
+							<div class="card-body text-center p-5">
+								<img
+									src="https://randomuser.me/api/portraits/men/11.jpg"
+									class="rounded-circle mb-3"
+									alt=""
+								/>
+								<h3 class="card-title mb-3">Sahadat Hossen</h3>
+								<p class="card-text">
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+									Facilis delectus totam sit, commodi architecto molestiae.
+								</p>
+								<a href="#"><i class="bi bi-twitter text-dark mx-3"></i></a>
+								<a href="#"><i class="bi bi-linkedin text-dark mx-3"></i></a>
+								<a href="#"><i class="bi bi-facebook text-dark mx-3"></i></a>
+								<a href="#"><i class="bi bi-instagram text-dark mx-3"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<div class="card bg-light">
+							<div class="card-body text-center p-5">
+								<img
+									src="https://randomuser.me/api/portraits/men/18.jpg"
+									class="rounded-circle mb-3"
+									alt=""
+								/>
+								<h3 class="card-title mb-3">Peter Helman</h3>
+								<p class="card-text">
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+									Facilis delectus totam sit, commodi architecto molestiae.
+								</p>
+								<a href="#"><i class="bi bi-twitter text-dark mx-3"></i></a>
+								<a href="#"><i class="bi bi-linkedin text-dark mx-3"></i></a>
+								<a href="#"><i class="bi bi-facebook text-dark mx-3"></i></a>
+								<a href="#"><i class="bi bi-instagram text-dark mx-3"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<div class="card bg-light">
+							<div class="card-body text-center p-5">
+								<img
+									src="https://randomuser.me/api/portraits/men/19.jpg"
+									class="rounded-circle mb-3"
+									alt=""
+								/>
+								<h3 class="card-title mb-3">Mike Donasky</h3>
+								<p class="card-text">
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+									Facilis delectus totam sit, commodi architecto molestiae.
+								</p>
+								<a href="#"><i class="bi bi-twitter text-dark mx-3"></i></a>
+								<a href="#"><i class="bi bi-linkedin text-dark mx-3"></i></a>
+								<a href="#"><i class="bi bi-facebook text-dark mx-3"></i></a>
+								<a href="#"><i class="bi bi-instagram text-dark mx-3"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Instructors Section Design End -->
+
+		<!-- Contact Section Design Start -->
+		<section class="p-5">
+			<div class="container">
+				<div class="row g-4 align-items-center">
+					<div class="col-md">
+						<h2 class="text-center mb-4">Contact Info</h2>
+						<ul class="list-group list-group-flush lead">
+							<li class="list-group-item">
+								<span class="fw-bold">Main Location : </span>50 Main Street,
+								Boston USA
+							</li>
+							<li class="list-group-item">
+								<span class="fw-bold">Enrollment Phone : </span>(555) - 873723
+							</li>
+							<li class="list-group-item">
+								<span class="fw-bold">Student Phone : </span>(873) - 837299
+							</li>
+							<li class="list-group-item">
+								<span class="fw-bold">Enrollment Email : </span
+								>enrollment@email.com
+							</li>
+							<li class="list-group-item">
+								<span class="fw-bold">Student Email : </span
+								>student@frontendbc.co
+							</li>
+						</ul>
+					</div>
+					<div class="col-md px-5 d-none d-sm-block">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3633.763984475592!2d88.59405511496637!3d24.38951248427819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fbefadffb66a7f%3A0xd058cb23e4041b51!2sCantonment%20Koshai%20khana!5e0!3m2!1sen!2sbd!4v1654518938580!5m2!1sen!2sbd"
+							width="450"
+							height="350"
+							style="border: 0"
+							allowfullscreen=""
+							loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"
+						></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Contact Section Design End -->
+
+		<!-- Footer Section Design Start -->
+		<footer class="p-5 bg-dark text-white text-center position-relative">
+			<p class="lead">Copyright &copy; 2022 All right deserved.</p>
+			<a href="#" class="position-absolute bottom-0 end-0 p-5">
+				<i class="bi bi-arrow-up-circle h1"></i>
+			</a>
+		</footer>
+		<!-- Footer Section Design End -->
 
 		<!-- Bootstrap Js File Link  -->
 		<script
